@@ -1,0 +1,25 @@
+<header class="header">
+    <nav class="navbar">
+        <div class="open">
+            <span (click)="openMenu()" style="cursor:pointer">&#9776;</span>
+        </div>
+
+        <img src="../assets/images/Carvajal logo 1.png" alt="carvajal logo" class="logo">
+
+        <div class="right">
+            <img src="../assets/images/icon_user-fotor 1.png" alt="Icono de Usuario" class="user-icon">
+            <span class="user-text">luizapma</span>
+        </div>
+    </nav>
+</header>
+
+<div class="left">
+    <div id="menuContainer">
+        <a href="javascript:void(0)" id="closeBtn" (click)="closeMenu()">&times;</a>
+        <a routerLink="/home" class="menuOption">Home</a>
+        <a routerLink="/flujo-in" class="menuOption">Flujo in</a>
+        <a routerLink="/flujo-out" class="menuOption">Flujo out</a>
+        <a routerLink="/login" class="menuOption">Cerrar sesión</a>
+    </div>
+</div>
+

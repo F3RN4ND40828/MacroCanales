@@ -1,0 +1,34 @@
+#menuContainer {
+    position: fixed;
+    top: 50px;
+    left: 0;
+    width: 200px;
+    height: calc(100% - 50px);
+    background-color: rgb(12, 30, 123);
+    overflow-x: hidden;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+  }
+  
+  .menuOption {
+    padding: 15px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .menuOption:hover {
+    background-color: #676767b1;
+  }
+  
+  #closeBtn {
+    font-size: 36px;
+    color: #ffffff;
+    cursor: pointer;
+    padding-left: 150px;
+  }
+  

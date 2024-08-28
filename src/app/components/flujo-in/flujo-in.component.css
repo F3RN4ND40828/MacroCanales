@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Espacia los elementos entre sí */
+    background-color: rgb(12, 30, 123);
+    padding: 5px 20px;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Asegura que el header esté sobre otros elementos */
+  }
+  
+  .navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Alinea el icono de menú a la izquierda y el usuario a la derecha */
+    align-items: center;
+  }
+  
+  .left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .logo {
+    height: 70px;
+    margin-right: 56px;
+  }
+  
+  .user-button {
+    display: right;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .user-button:hover {
+    color: #cccccc;
+  }
+  
+  .user-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .user-text {
+    font-size: 16px;
+    color: white;
+  }
+  
+  #menuContainer {
+    position: fixed; /* Posición fija en la página */
+    top: 50px; /* Debajo del navbar */
+    left: 10px; /* Alineado a la izquierda */
+    width: 200px; /* Ancho del menú */
+    height: calc(100% - 50px); /* Altura completa menos la altura del navbar */
+    background-color: rgb(12, 30, 123); /* Color de fondo */
+    overflow-x: hidden; /* Ocultar desbordamiento horizontal */
+    transition: 0.5s; /* Transición suave */
+    display: none; /* Inicialmente escondido */
+    flex-direction: column; /* Opciones de menú en columna */
+    padding-top: 20px; /* Espacio superior para separar del borde */
+  }
+  
+  .menuOption {
+    padding: 15px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .menuOption:hover {
+    background-color: #676767b1;
+  }
+  
+  #closeBtn {
+    font-size: 36px;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 0 0 0 150px;
+  }
+  
+  .sidebar {
+    display: none; /* No se utiliza, mantenlo escondido */
+  }
+  
+  main {
+    flex: 1;
+    padding: 20px;
+    margin-top: 50px; /* Espacio para el navbar fijo */
+  }
+  
+  #content {
+    margin-top: 20px;
+  }
+  
